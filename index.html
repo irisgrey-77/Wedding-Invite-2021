@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+<title>Iris Grey - Personalised Invitations for every occasion</title>
+</head>
+<body>
+<header>
+  <div> <img src="images/invite-logo.png" alt="logo" class="logo" title="logo" /> </div>
+  <span class="header-text">Personalised Invitations</span> </header>
+<main class="wrapper">
+  <div class="row">
+    <div class="column">
+      <h2 class="subheader-text">1. Choose your style:</h2>
+      <img src="images/invite-design-1-stat.jpg" class="thumbnails hover-image" id="inviteOne" onclick="changeStyle('invite1')" alt="invite1"/> <img src="images/invite-design-2-stat.jpg" class="thumbnails hover-image" id="inviteTwo" onclick="changeStyle('invite2')" alt="invite2"/> <img src="images/invite-design-3-stat2.jpg" class="thumbnails hover-image" id="inviteThree" onclick="changeStyle('invite3')" alt="invite3"/>
+      <div>
+        <div class="left-column">
+          <h2 class="subheader-text">2. Fill in your details:</h2>
+          <label for="input-name1" class="form-text">Name #1</label>
+          <input type="text" id="input-name1" class="input-name1" value="" placeholder="Name One &" maxlength="10" onkeyup="livetype()" />
+          <label for="input-name2" class="form-text">Name #2</label>
+          <input type="text" id="input-name2" class="input-name2" value="" placeholder="Name Two" maxlength="10" onkeyup="livetype()" />
+          <br />
+          <br />
+          <label for="input-message1" class="form-text">Message Line 1</label>
+          <br />
+          <input type="text" id="input-message1" class="input-message" value="" placeholder="invite you to their" maxlength="20" onkeyup="livetype()" />
+          <br />
+          <br />
+          <label for="input-message2" class="form-text">Message Line 2</label>
+          <br />
+          <input type="text" id="input-message2" class="input-message" value="" placeholder="Event" maxlength="10" onkeyup="livetype()" />
+          <br />
+          <br />
+          <br />
+          <label for="input-name1" class="form-text">Date</label>
+          <input type="text" id="input-date" class="input-name1" value="" placeholder="on 23/11/24" maxlength="20" onkeyup="livetype()" />
+          <label for="input-name2" class="form-text">Time</label>
+          <input type="text" id="input-time" class="input-name2" value="" placeholder="at 3.30pm" maxlength="10" onkeyup="livetype()" />
+          <br />
+          <br />
+          <label for="input-location" class="form-text">Location</label>
+          <br />
+          <input type="text" id="input-location" class="input-message" value="" placeholder="at Curzon Hall, Sydney" maxlength="30" onkeyup="livetype()" />
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="invite-image-text-overlay" id="invite-image">
+        <div id="inputNameOne" class="name-style"></div>
+        <div id="inputNameTwo" class="name-style"></div>
+        <div id="inputMessageOne" class="small-font-style"></div>
+        <div id="inputMessageTwo"></div>
+        <div id="inputDate" class="small-font-style"></div>
+        <div id="inputTime" class="small-font-style"></div>
+        <div id="inputLocation" class="small-font-style"></div>
+      </div>
+      <img src="images/invite-design-1-stat.jpg" alt="Image Design 1" class="invite-image" title="Image Design 1" id="mainInvite" /> </div>
+  </div>
+</main>
+<footer> <br />
+  <br />
+  © Iris Grey 2021 </footer>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,200 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Avenir";
+  background-color: #faf6f5;
+  background-image: url("images/transparentleaves.png");
+  background-position: right;
+}
+.wrapper {
+  display: flex;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+header {
+  overflow: hidden;
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+input::placeholder {
+  font-style: italic;
+  color: #B4B2B2;
+}
+.logo {
+  width: 150px;
+}
+.invite-image {
+  position: relative;
+  width: 600px;
+  margin: 90px 0px 90px 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.thumbnails {
+  width: 200px;
+  height: 263px;
+  margin: 0px 20px 20px 20px;
+  background-color: #f5f2f1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.header-text {
+  color: #926a57;
+  font-size: 39px;
+  font-family: "Avenir";
+}
+.subheader-text {
+  color: #926a57;
+  font-size: 30px;
+  font-family: "Avenir";
+	text-align: center;
+	
+}
+.small-font-style {
+  font-family: "Avenir";
+  font-size: 30px;
+  color: #917773;
+}
+.input-name1 {
+  width: 160px;
+  margin: 5px 20px 5px 2px;
+  padding: 10px;
+  border-radius: 10px;
+  border-style: none;
+}
+.input-name2 {
+  width: 160px;
+  margin: 5px 0px 5px 2px;
+  padding: 10px;
+  border-radius: 10px;
+  border-style: none;
+}
+.input-message {
+  align-content: center;
+  width: 99%;
+  margin: 10px 0px 0px 0px;
+  padding: 10px;
+  border-radius: 10px;
+  border-style: none;
+}
+.form-text {
+  color: #926a57;
+  font-size: 20px;
+  font-family: "Avenir";
+  font-style: italic;
+  margin: 0px 5px 0px 0px;
+}
+.left-column {
+  background-color: #dbd0b6;
+  border-radius: 20px;
+  margin: 10px 20px 20px 20px;
+  padding: 10px 50px 50px 50px;
+  width: 590px;
+  text-align: center;
+}
+.column {
+  position: relative;
+  float: left;
+}
+.left, .right {
+  width: 25%;
+}
+.middle {
+  width: 50%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* fonts used */
+
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('fonts/Avenir.ttc') format('truetype');
+}
+@font-face {
+  font-family: 'Aescudos';
+  src: url('fonts/Aescudos.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Aldine';
+  src: url('fonts/Aldine.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Park Lane';
+  src: url('fonts/ParkLaneNF.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Savoye';
+  src: url('fonts/SavoyeLET.ttc') format('truetype');
+}
+@font-face {
+  font-family: 'Snell Round';
+  src: url('fonts/SnellRoundhand.ttc') format('truetype');
+}
+@font-face {
+  font-family: 'Zapfino';
+  src: url('fonts/Zapfino.ttf') format('truetype');
+}
+
+@media screen and (max-width: 640px) {
+  .header-text {
+    display: none;
+  }
+  .icon {
+    width: 90px;
+  }
+}
+
+footer {
+  background-color: #926a57;
+  height: 100px;
+  width: 100%;
+  color: #ffffff;
+  font-size: 15px;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 5px;
+}
+.hover-image:hover {
+  opacity: 0.7;
+}
+.invite-image-text-overlay, #invite-image {
+  display: inline-block;
+  position: absolute;
+  margin-top: 120px;
+  left: 50%;
+  transform: translate(-50%, 10%);
+  width: 450px;
+  height: 500px;
+  z-index: 1;
+  text-align: center;
+  word-break: break-all;
+  line-height: 4rem;
+}
+/* invite style one */
+.style1 {
+  font-family: "Aldine";
+  font-size: 115px;
+  color: #D8C4B7;
+  padding: 6rem;
+}
+/* invite style two */
+.style2 {
+  font-family: "Zapfino";
+  font-size: 47px;
+  color: #231F18;
+  padding: 6rem;
+}
+/* invite style three */
+.style3 {
+  font-family: "Aescudos";
+  font-size: 80px;
+  color: #366291;
+  padding: 6rem;
+}
